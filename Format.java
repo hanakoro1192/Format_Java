@@ -1,3 +1,4 @@
+//学んだ内容
 import java.math.*;
 import java.text.DecimalFormat;
 
@@ -19,16 +20,16 @@ class Format{
 
         System.out.println(String.format("%s", (int)d+1));
 
-        DecimalFormat format = new DecimalFormat();
+        DecimalFormat format = new DecimalFormat("04.#");
         System.out.println(format.format(d+1));
 
         double e = 3.14;
         double f = 1;
 
-        DecimalFormat a = new DecimalFormat(e);
-        DecimalFormat b = new DecimalFormat(f);
-        DecimalFormat c = a.add(b);
+        BigDecimal a = new BigDecimal(e);
+        BigDecimal b = new BigDecimal(f);
+        BigDecimal c = a.add(b);
 
-        System.out.println((int)c);
+        System.out.println(c);
     }
 }
