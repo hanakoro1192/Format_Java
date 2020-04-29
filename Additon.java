@@ -8,7 +8,7 @@ public class Additon {
             int data1 = Integer.parseInt(str1);
             int data2 = Integer.parseInt(str2);
             System.out.println(data1 + data2);
-        }catch(ArrayIndexOutOfBoundsException e){
+        }catch(ArrayIndexOutOfBoundsException e){ //配列のデータが多すぎるときのエラーとなる
             System.out.println("実行時に引数を２つ指定して下さい");
             System.out.println("利用方法：java Addtion [数値１] [数値2]");
         }catch(NumberFormatException e){
