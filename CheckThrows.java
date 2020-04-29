@@ -6,7 +6,7 @@ public class CheckThrows {
             System.out.println(ct.parse(args[0]));
         }catch(NumberFormatException e){
             System.out.println("数値を入力して下さい");
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage()); //getMessageで下のデータを取得できる
         }catch(ArrayIndexOutOfBoundsException e){
             System.out.println("引数を一つ入力して下さい");
         }

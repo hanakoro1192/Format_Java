@@ -12,7 +12,7 @@ public class Overload {
     }
 
     private void dispaly(int i, int j) {
-        System.out.println("受け取った引数" + (i + j);
+        System.out.println("受け取った引数" + (i + j));
     }
 
     private void dispaly(double d) {
