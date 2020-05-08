@@ -9,7 +9,7 @@ public class Change {
         int temp;
 
         for(int i = deta_number -1; i > 0; i--){
-            for(j = 0; j < i; j++){
+            for(int j = 0; j < i; j++){
                 if(deta[j] > deta[i]){
                     temp = deta[j];
                     deta[j] = deta[j+1];
@@ -18,7 +18,7 @@ public class Change {
             }
         }
         for(int k = 0; k < deta.length; k++){
-            System.out.println(deta[i]);
+            System.out.println(deta_number);
         }
     }
 }
