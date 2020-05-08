@@ -51,18 +51,44 @@ public class SortStudent {
             }
         }
 
+        //昇順のソート
         for(i = 1; i < k; i++){
-            for(j = 0; (j > 0) && (sum[j-1] > sum[j]);){
+            for(j = 0; (j > 0) && (sum[j-1] > sum[j]); j--){
                 if(sum[j-1] > sum[j]){
                     temp = sum[j-1];
                     sum[j-1] = sum[j];
                     sum[j] = temp;
 
+                    temp_name = name[i];
+                    name[i] = name[j];
+                    name[j] = temp_name;
+
                     temp = kokugo[j - 1];
                     kokugo[j-1] = kokugo[j];
                     kokugo[j] = temp;
+
+                    temp = math[j-1];
+                    math[j-1] = math[j];
+                    math[j] = temp;
+
+                    temp = eng[j-1];
+                    eng[j-1] = eng[j];
+                    eng[j] = temp;
+
+                    temp = number[j-1];
+                    number[j-1] = number[j];
+                    number[j] = temp;
                 }
             }
+        }
+
+        System.out.println("AttendanceNumber" + " " + "Namae" + " " + "Sum" + " " + "English" + " " +  "Language" + " "  + " "  + "Sugaku");
+        for(i = k-1; i>= 0; i--){
+            System.out.println(number[i] + " ");
+            System.out.println(name[i] + " ");
+            System.out.println(sum[i] + " ");
+            System.out.println(eng[i] + " ");
+            System.out.println(kokugo[i]);
         }
 
     }
