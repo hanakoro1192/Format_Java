@@ -1,3 +1,5 @@
+package a;
+
 public class a {
     public static void main(String[] args) {
         boolean isBroken = false;
@@ -7,8 +9,8 @@ public class a {
             if (!isAssign) {
                 break;
             }
-            // isBroken = !isAssign;
-            // isAssign = isBroken;
+            isBroken = !isAssign;
+            isAssign = isBroken;
         }
     }
 }
